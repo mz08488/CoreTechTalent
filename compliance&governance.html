@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compliance & Governance | CoreTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #ffffff;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .fallback-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://unsplash.com/photos/man-in-white-dress-shirt-standing-beside-woman-in-black-dress-S-_8VftVxSk'); /* Replace with actual image path */
+      background-size: cover;
+      background-position: center;
+      z-index: -3;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 6rem 2rem 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #f97316;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-back {
+      background: #f97316;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #ea580c;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    ul li::before {
+      content: "✔️ ";
+    }
+
+    ul li {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fallback Image -->
+  <!-- <div class="fallback-bg"></div> -->
+
+  <!-- Background Video -->
+  <!-- <video autoplay muted loop class="video-bg">
+    <source src="compliance-video.webm" type="video/webm"> -->
+    <!-- Fallback image is already loaded in .fallback-bg -->
+  <!-- </video> -->
+
+  <div class="overlay"></div>
+
+  <div class="content">
+     <img src="p2.avif" alt="Digital Strategy" class="service-image" />
+    <h1>Compliance & Governance</h1>
+    <p>
+      CoreTech Talent & Consulting provides strategic compliance and governance solutions to help your institution meet regulatory demands and uphold global standards.
+    </p>
+    <p>
+      Our experts specialize in implementing frameworks such as <strong>SBP Regulations</strong> (Pakistan’s central bank policies), <strong>PCI DSS</strong> (for card payment security), and <strong>ISO 27001/22301</strong> (information security and business continuity).
+    </p>
+    <ul>
+      <li>Internal audits and gap analysis</li>
+      <li>PCI DSS certification readiness</li>
+      <li>SBP compliance and reporting frameworks</li>
+      <li>Risk management and governance design</li>
+      <li>Data privacy, encryption, and architecture consulting</li>
+    </ul>
+    <p>
+      Our mission is to help you reduce risk, ensure data security, and build long-term trust with customers and regulators.
+    </p>
+    <a href="index.html#services" class="btn-back">← Back to Services</a>
+  </div>
+
+</body>
+</html>

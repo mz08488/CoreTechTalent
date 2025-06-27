@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers - CoreTech</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('group-people-with-laptops.jpg'); /* Update with your path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgb(194, 199, 218);
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      color: #0a2540;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .job-listing {
+      margin-top: 30px;
+    }
+
+    .job {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job h3 {
+      margin: 0;
+    }
+
+    .job p {
+      margin: 5px 0 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Careers at CoreTech</h1>
+      <p>Join our mission to drive digital innovation. We're hiring for multiple roles across fintech, development, and compliance.</p>
+    </div>
+  </section>
+
+  <div class="content">
+    <h2>Current Openings</h2>
+    <div class="job-listing">
+      <div class="job">
+        <h3>Frontend Developer (React)</h3>
+        <p>Karachi · Full-time · 3+ Years Experience</p>
+      </div>
+      <div class="job">
+        <h3>Compliance Analyst</h3>
+        <p>Remote · Contract · Experience with SBP/PCI preferred</p>
+      </div>
+      <div class="job">
+        <h3>Cloud Infrastructure Engineer</h3>
+        <p>Lahore · Full-time · AWS / Azure required</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

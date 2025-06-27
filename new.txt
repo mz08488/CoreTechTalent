@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreTech Talent & Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <div class="logo">CoreTech<span class="logo-accent">Talent</span></div>
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#careers" class="nav-link">Careers</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+    <nav id="mobileNav" class="nav-mobile">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#careers" class="nav-link">Careers</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <video class="hero-video" autoplay muted loop>
+      <source src="C:\Users\DC\Desktop\internship\projhtml\video2.webm" type="video/webm">
+      <img src="https://via.placeholder.com/1920x600?text=Video+Not+Supported" alt="Fallback image">
+    </video>
+    <div class="container hero-content">
+      <div>
+        <h1 class="hero-title">Driving Digital Transformation with <span class="hero-accent">AI Talent</span> and Technical Experts</h1>
+        <p class="hero-description">CoreTech Talent & Consulting connects fintech, banking, and digital firms with specialized consultants and AI-driven talent on flexible models to accelerate innovation and compliance.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" onclick="showOverview(event)">Get Started</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-placeholder">
+          <span class="hero-icon">💼</span>
+          <p>Specialized Talent for Fintech</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <div id="overview" class="overview">
+    <div class="overview-content">
+      <button class="close-btn" onclick="hideOverview()">×</button>
+      <h2>Company Overview</h2>
+      <p>CoreTech Talent & Consulting is a specialized provider of technical, operational, and consulting resources tailored to the banking, fintech, and digital industries. We connect businesses with AI-driven talent, digital transformation experts, and compliance-ready consultants on a flexible, hourly and project-based model.</p>
+      <h3>Our Mission</h3>
+      <p>To deliver scalable digital, technical, and operational expertise that drives innovation, compliance, and transformation in financial and digital institutions.</p>
+      <h3>Our Vision</h3>
+      <p>To become the region's most reliable and specialized provider of tech talent and digital consulting for mission-critical platforms and regulatory environments.</p>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Core Services</h2>
+        <p class="section-description">Providing expert talent and consulting services tailored to financial and digital transformation</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">👨‍💻</span>
+          <h3 class="service-title">Web & Mobile Developers</h3>
+          <p class="service-description">Experienced developers for front-end and back-end application development across platforms.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🎨</span>
+          <h3 class="service-title">UI/UX Designers</h3>
+          <p class="service-description">Human-centered design professionals enhancing digital user experiences.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">💳</span>
+          <h3 class="service-title">Card Systems & ATM Experts</h3>
+          <p class="service-description">Specialists in card infrastructure, ATM/POS deployment, and transaction security.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">📡</span>
+          <h3 class="service-title">Network & Infrastructure</h3>
+          <p class="service-description">End-to-end IT infrastructure, monitoring, and support to ensure uptime and scalability.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🧠</span>
+          <h3 class="service-title">Digital Transformation Strategy</h3>
+          <p class="service-description">Consulting on digital readiness, agile frameworks, and innovative product roadmaps.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">📋</span>
+          <h3 class="service-title">Compliance & Governance</h3>
+          <p class="service-description">Expertise in SBP, PCI DSS, ISO standards, and audits for secure and compliant systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <div>
+        <h2 class="about-title">About CoreTech Talent & Consulting</h2>
+        <p class="about-description">We help banks, fintech startups, and digital-first companies scale their teams and systems with the right experts. Whether it’s a mission-critical project or long-term transformation, we ensure success with agile delivery and compliance assurance.</p>
+        <p class="about-description">Our flexible delivery model provides vetted talent and consultants to meet both project-based and operational requirements.</p>
+        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-icon">👥</span>
+          <p class="stat-number">500+</p>
+          <p class="stat-label">Specialized Consultants</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🏦</span>
+          <p class="stat-number">50+</p>
+          <p class="stat-label">Banks & Fintechs Served</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🌍</span>
+          <p class="stat-number">10+</p>
+          <p class="stat-label">Markets Covered</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">⚙️</span>
+          <p class="stat-number">100+</p>
+          <p class="stat-label">Digital Projects Delivered</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">CoreTech<span class="logo-accent">Talent</span></div>
+        <p class="footer-description">Empowering digital transformation through talent and compliance-driven consulting.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">💼</a>
+          <a href="#" class="social-link">📸</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Talent Areas</h3>
+        <ul class="footer-links">
+          <li><a href="#services" class="footer-link">Web & Mobile</a></li>
+          <li><a href="#services" class="footer-link">UI/UX Design</a></li>
+          <li><a href="#services" class="footer-link">Card Systems</a></li>
+          <li><a href="#services" class="footer-link">Network & Infra</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">Consulting</h3>
+        <ul class="footer-links">
+          <li><a href="#services" class="footer-link">Digital Strategy</a></li>
+          <li><a href="#services" class="footer-link">SBP Compliance</a></li>
+          <li><a href="#services" class="footer-link">Audits & Governance</a></li>
+          <li><a href="#services" class="footer-link">ISO & PCI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-text">📍 Karachi, Pakistan</p>
+        <p class="footer-text">📞 —</p>
+        <p class="footer-text">✉️ info@coretechtalent.com.pk</p>
+        <p class="footer-text">🌐 www.coretechtalent.com.pk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 CoreTech Talent & Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
